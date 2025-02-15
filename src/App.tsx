@@ -10,7 +10,11 @@ const theme = createTheme({
 });
 
 function App() {
-  return <MantineProvider theme={theme}></MantineProvider>;
+  return (
+    <MantineProvider theme={theme}>
+      <AppLayout />
+    </MantineProvider>
+  );
 }
 
 export default App;
