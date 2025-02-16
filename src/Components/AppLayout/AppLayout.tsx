@@ -12,6 +12,7 @@ import {
   HiChevronDown,
 } from "react-icons/hi2";
 import { HiOutlineClipboardCheck, HiOutlineUserAdd } from "react-icons/hi";
+import SidebarNavButton from "../Sidebar/SidebarNavButton/SideBarNavButton";
 
 export default function AppLayout() {
   return (
@@ -40,58 +41,57 @@ export default function AppLayout() {
             <span className={styles.groupLabel}>
               OVERVIEW <HiChevronDown />
             </span>
-            <button className={`${styles.navButton} ${styles.active}`}>
+            <SidebarNavButton notificationCount={0} active={true}>
               <HiOutlineChartPie size={24} />
               Dashboard
-            </button>
-            <button className={styles.navButton}>
+            </SidebarNavButton>
+            <SidebarNavButton notificationCount={3}>
               <HiOutlineInformationCircle size={24} />
               Notice Board
-              <span>3</span>
-            </button>
-            <button className={styles.navButton}>
+            </SidebarNavButton>
+            <SidebarNavButton>
               <HiOutlineUserGroup size={24} />
               Community
-            </button>
+            </SidebarNavButton>
           </div>
           <div>
             <span className={styles.groupLabel}>
               EMPLOYEES <HiChevronDown />
             </span>
-            <button className={styles.navButton}>
+            <SidebarNavButton>
               <HiOutlineUsers size={24} />
               Employees
-            </button>
-            <button className={styles.navButton}>
+            </SidebarNavButton>
+            <SidebarNavButton>
               <HiOutlineUserAdd size={22} />
               Add Employee
-            </button>
-            <button className={styles.navButton}>
+            </SidebarNavButton>
+            <SidebarNavButton>
               <HiOutlineCalendarDays size={24} />
               Vacations
-            </button>
+            </SidebarNavButton>
           </div>
           <div>
             <span className={styles.groupLabel}>
               PROJECTS AND REPORTS <HiChevronDown />
             </span>
-            <button className={styles.navButton}>
+            <SidebarNavButton>
               <HiOutlineBriefcase size={24} scale={24} />
               Projects
-            </button>
-            <button className={styles.navButton}>
+            </SidebarNavButton>
+            <SidebarNavButton>
               <HiOutlineClipboardCheck size={24} />
               Reports
-            </button>
+            </SidebarNavButton>
           </div>
           <div>
             <span className={styles.groupLabel}>
               SETTINGS <HiChevronDown />
             </span>
-            <button className={styles.navButton}>
+            <SidebarNavButton>
               <HiOutlineCog6Tooth size={24} />
               Settings
-            </button>
+            </SidebarNavButton>
           </div>
         </nav>
       </aside>
