@@ -26,60 +26,6 @@
     }
   }
 
-  aside {
-    position: sticky;
-    top: 0;
-    width: 260px;
-    grid-row: 1;
-    grid-column: 1;
-    height: 100vh;
-    padding: 1.8rem 1.25rem;
-    background-color: #fff;
-
-    .logo {
-      display: flex;
-      align-items: center;
-      gap: 9px;
-      margin-bottom: 25px;
-
-      .logoImg {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 6px;
-        border-radius: 9px;
-        color: #fff;
-        background-color: #20c997;
-        background: linear-gradient(
-          180deg,
-          rgba(150, 242, 215, 1) 0%,
-          rgba(32, 201, 151, 1) 100%
-        );
-      }
-
-      .title {
-        color: #343a40;
-      }
-    }
-
-    nav {
-      margin-top: 35px;
-      display: flex;
-      flex-direction: column;
-      gap: 30px;
-
-      .groupLabel {
-        display: flex;
-        align-items: center;
-        gap: 5px;
-        font-size: 13px;
-        letter-spacing: 1.1px;
-        color: #868e96;
-        margin-bottom: 15px;
-      }
-    }
-  }
-
   main {
     padding: 10px 25px;
     grid-column: 2;
