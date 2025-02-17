@@ -11,7 +11,7 @@ import {
 } from "react-icons/hi2";
 import { HiOutlineClipboardCheck, HiOutlineUserAdd } from "react-icons/hi";
 
-import SidebarNavButton from "./SidebarNavButton/SideBarNavButton";
+import SidebarNavButton from "./SidebarNavButton/SidebarNavButton";
 
 import styles from "./Sidebar.module.css";
 import { Title } from "@mantine/core";
